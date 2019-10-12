@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <html lang="en">
+        <meta charset="utf-8">
+        <title>
+                Numberpad Piano!
+        </title>
+        <meta charset="utf-8">
+        <link href="Website css.css" rel="stylesheet" type="text/css">
+        <script src="simpleTones.js-master/simpleTones.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+                (adsbygoogle = window.adsbygoogle || []).push({
+                        google_ad_client: "ca-pub-9231179208449515",
+                        enable_page_level_ads: true
+                });
+        </script>
+
+</head>
+
+<body>
+
+        <div class="keys">
+                <button type="button" value="7" onclick='playTone("B4", "sine")'>7</button>
+                <button type="button" value="8" onclick='playTone("C5", "sine")'>8</button>
+                <button type="button" value="9" onclick='playTone("D5", "sine")'>9</button>
+
+
+                <button type="button" value="4" onclick='playTone("F4", "sine")'>4</button>
+                <button type="button" value="5" onclick='playTone("G4", "sine")'>5</button>
+                <button type="button" value="6" onclick='playTone("A4", "sine")'>6</button>
+
+
+                <button type="button" value="1" onclick='playTone("C4", "sine")'>1</button>
+                <button type="button" value="2" onclick='playTone("D4", "sine")'>2</button>
+                <button type="button" value="3" onclick='playTone("E4", "sine")'>3</button>
+
+
+                <button type="button" value="0" onclick='playTone("E5", "sine")'>0</button>
+        </div>
+
+        <div class="leftText">
+                <h1>
+                        Very Good Piano
+                </h1>
+                <p>
+                        Use your numberpad or tap the numbers to make music! Inspired from the YouTube piano. This website is made for desktop and may
+                        not work right on mobile. This will be updated very soon. This is the first version Check out some songs on the left ->
+                </p>
+        </div>
+        <div class="rightText">
+                <h1>
+                        Hey! Check out some songs you can play here!
+                </h1>
+                <h2 class="SongTitle">
+                        Ode to Joy
+                </h2>
+                <p class="notes">
+                        4 4 5 6 6 5 4 3 2 2 3 4 4 3 3- 4 4 5 6 6 5 4 3 2 2 3 4 3 2 2- 3 3 4 2 3 45 4 2 3 45 4 3 2 3 4- 4
+                        4 5 6 6 5 4 3 2 2 3 4 3 2 2-
+                </p>
+        </div>
+
+        <script>
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 96) { playTone("E5", "sine") } }); // numberpad key 0
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 97) { playTone("C4", "sine") } }); // numberpad key 1
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 98) { playTone("D4", "sine") } }); // numberpad key 2
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 99) { playTone("E4", "sine") } }); // numberpad key 3
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 100) { playTone("F4", "sine") } }); // numberpad key 4
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 101) { playTone("G4", "sine") } }); //numberpad key 5
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 102) { playTone("A4", "sine") } }); // numberpad key 6
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 103) { playTone("B4", "sine") } }); //numberpad key 7
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 104) { playTone("C5", "sine") } }); //numberpad key 8
+                window.addEventListener('keydown', function (e) { if (e.keyCode == 105) { playTone("D5", "sine") } }); //numberpad key 9
+        </script>
+
+
+
+</body>
+
+</html>
